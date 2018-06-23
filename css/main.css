@@ -1,0 +1,191 @@
+.navbar-default{
+    background-color:#428bca;
+    border-color:#e7e7e7;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color:black;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-loggedin-status{
+    float: right;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 16px;
+    line-height: 20px;
+    color:white;
+}
+.navbar-loggedin-status:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.jumbotron {
+    background-color: ghostwhite;
+}
+.logout{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.logout:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ng-invalid.ng-dirty{
+    border-color:red;
+}
+
+.ng-valid.ng-dirty{
+    border-color:green;
+}
+
+.container {
+    position: relative;
+}
+.err{
+    transition:1s linear all;
+    color:red;
+}
+
+
+.reveal-animation.ng-enter {
+    -webkit-animation: enter_sequence 1s linear; /* Safari/Chrome */
+    animation: enter_sequence 1s linear; /* IE10+ and Future Browsers */
+}
+@-webkit-keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+@keyframes enter_sequence {
+    from { opacity:0; }
+    to { opacity:1; }
+}
+
+
+
+
+
+
+.animate.ng-enter { 
+    -webkit-animation: enter 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    animation: enter 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+} 
+@-webkit-keyframes enter {
+	from {
+	    opacity: 0;
+    	height: 0px;
+    	bottom: -70px;
+    }
+    75% {
+    	bottom: 15px;
+    }
+    to {
+        opacity: 1;
+    	height: 30px;
+    	bottom: 0px;
+    }
+}
+@keyframes enter {
+	from {
+	    opacity: 0;
+    	height: 0px;
+    	bottom: -70px;
+    }
+    75% {
+    	bottom: 15px;
+    }
+    to {
+        opacity: 1;
+    	height: 30px;
+    	bottom: 0px;
+    }
+}
+
+.animate.ng-leave { 
+    -webkit-animation: leave 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+    animation: leave 300ms cubic-bezier(0.445, 0.050, 0.550, 0.950);
+} 
+@-webkit-keyframes leave {
+	to {
+	    opacity: 0;
+    	height: 0px;
+    	bottom: -70px;
+    }
+    25% {
+    	bottom: 15px;
+    }
+    from {
+        opacity: 1;
+    	height: 30px;
+    	bottom: 0px;
+    }
+}
+@keyframes leave {
+	to {
+	    opacity: 0;
+    	height: 0px;
+    	bottom: -70px;
+    }
+    25% {
+    	bottom: 15px;
+    }
+    from {
+        opacity: 1;
+    	height: 30px;
+    	bottom: 0px;
+    }
+}
+
+
+
+
+.user-listing.ng-enter,
+.user-listing.ng-leave,
+.user-listing.ng-move {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+.user-listing.ng-enter,
+.user-listing.ng-move {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.user-listing.ng-move.ng-move-active,
+.user-listing.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.user-listing.ng-leave {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.user-listing.ng-leave.ng-leave-active {
+    opacity: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

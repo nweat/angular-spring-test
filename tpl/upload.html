@@ -1,0 +1,42 @@
+<div id="single" class="tab-pane fade">
+  <input type='text' ng-model="name" >
+    <a href="" ng-click="greeting()">consume api</a>
+    <pre>{{greet}}</pre>
+</div>
+
+<div id="multiple" class="tab-pane fade in active" style="padding:25px;">
+<div class="btn btn-primary btn-sm" ngf-select ngf-change="upload($files)" ngf-multiple="false" accept="application/vnd.ms-excel" ngf-max-size='1024000'>Upload</div><br>
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>Recorder</th>
+      <th>Specie</th>
+        <th>Disease</th>
+        <th>Bleach</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="animate" ng-repeat="data in results | filter:query">
+    <td>{{data.recorder}}</td>
+    <td>{{data.specie}}</td>
+    <td>{{data.disease}}</td>
+    <td>{{data.bleach}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{progressPerc}}" aria-valuemin="0" aria-valuemax="{{progressPerc}}" style="width:{{progressPerc}}%">
+    {{progressPerc}}% Complete (success)
+  </div>
+</div>
+
+  Upload Log:
+  <pre>{{log}}</pre>
+
+</div>
+<!--<br><br><input type='file' ng-model='files' onchange="angular.element(this).scope().filesChanged(this)" multiple>
+<button ng-click="upload()">Upload</button>
+
+<li ng-repeat="file in files">{{file.name}}</li>
+<p>{{info}}</p>-->
